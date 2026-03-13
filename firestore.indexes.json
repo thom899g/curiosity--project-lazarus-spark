@@ -1,0 +1,21 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "opportunities",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {"fieldPath": "timestamp", "mode": "DESCENDING"},
+        {"fieldPath": "profitEstimate", "mode": "DESCENDING"}
+      ]
+    },
+    {
+      "collectionGroup": "ledger",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {"fieldPath": "timestamp", "mode": "DESCENDING"},
+        {"fieldPath": "status", "mode": "ASCENDING"}
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
